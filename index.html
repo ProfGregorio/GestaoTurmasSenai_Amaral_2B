@@ -18,11 +18,12 @@
 
     <body>
         <header>
-            <nav>
+            <nav class="menu ">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">CONTATO</a></li>
-                    <li><a href="#">NOTICIAS</a></li>
+                    <li><a href="#">Lellis Ito - Turma A</a></li>
+                    <li><a href="#">Lellis Ito - Turma B</a></li>
+                    <li><a href="#">Amaral - Turma A</a></li>
+                    <li><a href="#">Amaral - Turma B</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,27 +35,98 @@
                 <img src="img/banner.svg" alt="banner">
             </picture>
         </div>
-        <section class="senai mk">
-            <h1>SENAI MAIRINQUE</h1>
-            <div class="turmas">
-                <section class="sala turma amaral">
-                    <h2>TURMA - AMARAL - 2A</h2>
-                    <ul>
-                        <li>Gabriel</li>
-                    </ul>
-                </section>
-                
-                <section class="sala turma amaral">
-                    <h2>TURMA - AMARAL - 2B</h2>
-                    <ul>
-                        <li>Allan</li>
-                        <li>...</li>
-                        <li>Vitor</li>
-                    </ul>
-                </section>
-            </div>
-        </section>
+       
+        <section class="senai mk" >
+            <section id="turmas">
+                <h1>SENAI MAIRINQUE</h1>
 
-        <h2>SOMOS TOPS</h2>
+                <section>
+                    <header>Lellis Ito - Turma A</header>
+                    <article>
+                        <ul class="listaAlunos" id="alunosLellis_A">
+                            <li>Christopher</li>
+                            <li>Deuel</li>
+                            <li>Gabriel</li>
+                            <li>Hebert</li>
+                            <li>Lara de Brito</li>
+                            <li>Lara de Marco</li>
+                            <li>Maisa</li>
+                            <li>Maria</li>
+                            <li>Mariana</li>
+                            <li>Murilo</li>
+                            <li>Rafaeli</li>
+                        </ul>
+                    </article>
+                    <footer>
+                        <h3>Quantidade de alunos 
+                            <mark>
+                                <p id="qtdAlunosLellis_A">0</p>
+                            </mark></h3>
+                    </footer>
+                </section>
+
+                <section>
+                    <header>Lellis Ito - Turma B</header>
+                    <article>
+                        <ul class="listaAlunos" id="alunosLellis_B">
+                            <li>João</li>
+                            <li>Rafael</li>
+                            <li>...</li>
+                        </ul>
+                    </article>
+                    <footer>
+                        <h3>Quantidade de alunos
+                            <p id="qtdAlunosLellis_B">10</p>
+
+                            </h3>
+                    </footer>
+                </section>
+
+                <section class="sala turma_A amaral ">
+                    <header>Pinto do Amaral - Turma A</header>
+                    <article>
+                        <ul>
+                            <li>João</li>
+                            <li>Rafael</li>
+                            <li>...</li>
+                        </ul>
+                    </article>
+                    <footer>
+                        <h3>Quantidade de alunos <mark>10</mark></h3>
+                    </footer>
+                </section>
+
+                <section class="sala turma_B amaral ">
+                    <header>Pinto do Amaral - Turma B</header>
+                    <article>
+                        <ul>
+                            <li>João</li>
+                            <li>Rafael</li>
+                            <li>...</li>
+                        </ul>
+                    </article>
+                    <footer>
+                        <h3>Quantidade de alunos <mark>10</mark></h3>
+                    </footer>
+                </section>
+            </section>
+
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+        <footer>
+            <h3>Desenvolvido por: Prof. <mark><b>Gregorio</b></mark></h3>
+        </footer>
+
+    <script>
+        function contarQuantidadeAlunosTurma(lista, qtd) {
+            const listaAlunos = document.getElementById(lista);
+            const quantidade = listaAlunos.querySelectorAll("li").length;
+            document.getElementById(qtd).textContent = quantidade;
+        }
+        contarQuantidadeAlunosTurma('alunosLellis_A', 'qtdAlunosLellis_A');
+
+    </script>
+        
     </body>
 </html>
