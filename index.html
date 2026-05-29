@@ -20,10 +20,10 @@
         <header>
             <nav class="menu ">
                 <ul>
-                    <li><a href="#">Lellis Ito - Turma A</a></li>
-                    <li><a href="#">Lellis Ito - Turma B</a></li>
-                    <li><a href="#">Amaral - Turma A</a></li>
-                    <li><a href="#">Amaral - Turma B</a></li>
+                    <li><a href="#LellisA" >Lellis Ito - Turma A</a></li>
+                    <li><a href="#LellisB" >Lellis Ito - Turma B</a></li>
+                    <li><a href="#AmaralA" >Amaral - Turma A</a></li>
+                    <li><a href="#AmaralB" >Amaral - Turma B</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,16 +32,16 @@
             <picture>  
                 <source media="(max-width:650px)" srcset="img/banner-600_350.svg">
                 <source media="(max-width:465px)" srcset="img/banner-450_200.svg">                 
-                <img src="img/banner.svg" alt="banner">
+                <img class="img-banner" src="img/banner.svg" alt="banner">
             </picture>
         </div>
        
         <section class="senai mk" >
             <section id="turmas">
-                <h1>SENAI MAIRINQUE</h1>
+                <h1 class="tituloPrincipal">SENAI MAIRINQUE</h1>
 
-                <section>
-                    <header>Lellis Ito - Turma A</header>
+                <section  class="sala turma_A lellis " id="LellisA">
+                    <header><h2>Lellis Ito - Turma A</h2></header>
                     <article>
                         <ul class="listaAlunos" id="alunosLellis_A">
                             <li>Christopher</li>
@@ -65,8 +65,8 @@
                     </footer>
                 </section>
 
-                <section>
-                    <header>Lellis Ito - Turma B</header>
+                <section  class="sala turma_B lellis " id="LellisB">
+                    <header><h2>Lellis Ito - Turma B</h2></header>
                     <article>
                         <ul class="listaAlunos" id="alunosLellis_B">
                             <li>João</li>
@@ -82,8 +82,8 @@
                     </footer>
                 </section>
 
-                <section class="sala turma_A amaral ">
-                    <header>Pinto do Amaral - Turma A</header>
+                <section class="sala turma_A amaral " id="AmaralA">
+                    <header><h2>Amaral - Turma A</h2></header>
                     <article>
                         <ul>
                             <li>João</li>
@@ -96,8 +96,8 @@
                     </footer>
                 </section>
 
-                <section class="sala turma_B amaral ">
-                    <header>Pinto do Amaral - Turma B</header>
+                <section class="sala turma_B amaral " id="AmaralB">
+                    <header><h2>Amaral - Turma B</h2></header>
                     <article>
                         <ul>
                             <li>João</li>
