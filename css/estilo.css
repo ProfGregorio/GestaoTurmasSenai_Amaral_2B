@@ -51,7 +51,7 @@ section {
 /* section section{
            font-size: 0;
         }    */
-#turmas section {
+#turmas .sala {
     display: inline-block;
     vertical-align: top;
     background-color: burlywood;
@@ -70,12 +70,15 @@ section {
     font-size: smaller;
 }
 
-#turmas .turmaA{
+#turmas .sala.turma_A{
     background-color: bisque;
+    color: #000;
 }
-#turmas .sala.turmaB{
+
+#turmas .sala.turma_B{
     background-color: blueviolet;
 }
+
 
 .listaAlunos {
     list-style: decimal-leading-zero;
