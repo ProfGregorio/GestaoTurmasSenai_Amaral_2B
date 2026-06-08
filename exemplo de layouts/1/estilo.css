@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+}
+
+header,
+footer{
+    background:#333;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+section{
+    padding:30px;
+    border:2px dashed #999;
+    margin:10px;
+}
+picture{
+    display:block;
+    width:100%;
+}
+
+picture img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+article{
+    background:#ddd;
+    padding:40px;
+    margin:10px 0;
+}
